@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0">
+        <link rel="stylesheet" href="./ajax.css">
+        <title>Garage</title>
+    </head>
+    <body>
+        <div id="button-box">
+            <div class="header">
+                <div id="estat">Estat de la connexió: <div id="connect"></div></div>
+                <form id="cercador"><input id="cerca" type="text" placeholder="Buscar per Id o Matrícula...">
+                    <button type="submit" id="cercar">&#128269;</button></form>
+            </div>
+            <button type="button"  id="get">Tots els Vehicles</button>
+            <div id="form">
+                <form id="entrada">
+                    <input id="input" type="text" class="entry" placeholder="Introduiu una nova matrícula...">
+                    <button type="submit" id="post">&#128190;</button>
+                </form>
+            </div>
+            <div id="order">
+                <div>Id <button type="button" id="byIdUp">&#8593;</button><button type="button" id="byIdDown">&#8595;</button></div>
+                <div>Plate <button type="button" id="byPlateUp">&#8593;</button><button type="button" id="byPlateDown">&#8595;</button></div>
+                <div>Km <button type="button" id="byKmUp">&#8593;</button><button type="button" id="byKmDown">&#8595;</button></div>
+            </div>
+            <div><ul id="llista"></ul></div>
+        </div>
+        <script src="./ajax.js"></script>
+    </body>
+</html>
